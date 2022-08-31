@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -15,38 +15,52 @@
         <p id="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </header>
       <form id="survey-form">
-        <label id="name-label">Name</label>
-        <input id="name" type="text" placeholder="Your Name" required/>
-        <label id="email-label">Email</label>
-        <input id="email" type="email" placeholder="Your Email" required/>
-        <label id="number-label">Number</label>
-        <input id="number" type="number" placeholder="Your Number" min="0" max="10"/>
-        <p>Your Gender</p>
-        <select id="dropdown">
-          <option>Male</option>
-          <option>Female</option>
-          <option>Other</option>
-        </select>
+        <div class="input-group">
+          <label id="name-label">Name</label>
+          <input id="name" type="text" placeholder="Your Name" required/>
+        </div>
+        <div class="input-group">
+          <label id="email-label">Email</label>
+          <input id="email" type="email" placeholder="Your Email" required/>
+        </div>
+        <div class="input-group">
+          <label id="number-label">Number</label>
+          <input id="number" type="number" placeholder="Your Number" min="0" max="10"/>
+        </div>
+        <div class="input-group">
+          <label>Your Gender</label>
+          <select id="dropdown">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <p>Are you a foodie</p>
+          <input type="radio" name="Value" value="Yes" /><span>Yes</span>
+          <br />
+          <input type="radio" name="Value" value="No" /><span>No</span>
+        </div>
 
-        <p>Are you a foodie</p>
-        <input type="radio" name="Value" value="Yes" /><span>Yes</span>
-        <br />
-        <input type="radio" name="Value" value="No" /><span>No</span>
+        <div class="input-group">
+          <p>Food You Like</p>
+          <input type="checkbox" name="Food" value="Burger" /><span>Burger</span>
+          <br />
+          <input type="checkbox" name="Food" value="Pizza" /><span>Pizza</span>
+          <br />
+          <input type="checkbox" name="Food" value="Chicket Fry" /><span>Chicket Fry</span>
+          <br />
+          <input type="checkbox" name="Food" value="Ice Cream" /><span>Ice Cream</span>
+        </div>
+        
+        <div class="input-group">
+          <p>Any additional comments?</p>
+          <textarea placeholder="Add any more information here"></textarea>
 
-
-        <p>Food You Like</p>
-        <input type="checkbox" name="Food" value="Burger" /><span>Burger</span>
-        <br />
-        <input type="checkbox" name="Food" value="Pizza" /><span>Pizza</span>
-        <br />
-        <input type="checkbox" name="Food" value="Chicket Fry" /><span>Chicket Fry</span>
-        <br />
-        <input type="checkbox" name="Food" value="Ice Cream" /><span>Ice Cream</span>
-
-        <p>Any additional comments?</p>
-        <textarea placeholder="Add any more information here"></textarea>
-        <br />
-        <button id="submit"> Submit Form </button>
+          <button id="submit"> Submit Form </button>
+        </div>
+        <div>
+        </div>
       </form>
       <!-- add your code -->
     </div>

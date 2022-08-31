@@ -5,4 +5,28 @@ body, html{
 .container{
     width: 960px;
     margin: 0 auto;
+    background: #f1f1f1;
+    padding: 50px;
+}
+
+#survey-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+input[type=text], input[type=email], input[type=number], select{
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+#survey-form > div {
+    flex-basis: calc(50% - 50px);
+    flex-direction: column;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    width: 100%;
+    margin-bottom: 20px;
 }
